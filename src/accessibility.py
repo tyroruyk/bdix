@@ -1,6 +1,7 @@
 import requests
 from tqdm import tqdm
 
+
 def accessibility(url):
     try:
         # simulate a long-running operation with tqdm
@@ -8,5 +9,5 @@ def accessibility(url):
             response = requests.get(url, timeout=5)
         response.raise_for_status()
         return True
-    except:
+    except Exception:
         return False
