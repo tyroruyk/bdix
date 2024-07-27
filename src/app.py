@@ -1,8 +1,10 @@
 from accessibility import accessibility
 from readFile import readFile
+from os import path
+base_path = path.dirname(path.abspath(__file__))
 
 urls = readFile(
-    "bdixServers.txt"
+    path.join(base_path,"bdixServers.txt")
 )  # credit goes to PC Builder Bangladesh for the server list
 workingUrls = []
 
