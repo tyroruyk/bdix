@@ -23,4 +23,4 @@ classifiers = [
 "Bug Tracker" = "https://github.com/tyroruyk/bdix/issues"
 
 [project.scripts]
-bdixchecker = 'app:main'
+bdixchecker = 'bdix.app:main'
