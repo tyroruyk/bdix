@@ -11,10 +11,14 @@ urls = readFile(
 
 def main():
     workingUrls = []
-
+    workingIndexes = [0]
+    
     for url in urls:
         if accessibility(url):
             workingUrls.append(url)
+            workingIndexes.append(urls.index(url))
+    
+    workingIndexes.append(0)
 
     if len(workingUrls) != 0:
         print("List of working servers: ", end=" ")
@@ -24,6 +28,12 @@ def main():
         print(
             "\n{0} servers are working out of {1} servers".format(
                 len(workingUrls), len(urls)
+            )
+        )
+
+        print(
+            "The working servers also can be found at {0}".format(
+                "https://tyroruyk.github.io/bdix/urls?q={0}".format(workingIndexes)
             )
         )
 
