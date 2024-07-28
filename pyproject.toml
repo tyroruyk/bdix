@@ -7,6 +7,7 @@ authors = [
 description = "This script check which BDIX servers works for your ISP."
 readme = "README.md"
 requires-python = ">=3.7"
+dependencies = ["requests","tqdm"]
 
 [tool.setuptools.package-data]
 bdix = ["*.txt"]
