@@ -15,7 +15,7 @@ bdix = ["*.txt"]
 
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU 3 License",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
