@@ -1,5 +1,5 @@
-from bdix.accessibility import accessibility
-from bdix.readFile import readFile
+from accessibility import accessibility
+from readFile import readFile
 from os import path
 
 base_path = path.dirname(path.abspath(__file__))
