@@ -1,6 +1,0 @@
-.venv/
-build/
-**/__pycache__/
-BDIX.egg-info/
-dist/
-app.spec
