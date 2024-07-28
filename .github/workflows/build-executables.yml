@@ -27,7 +27,7 @@ jobs:
 
       - name: Build executable
         run: |
-          pyinstaller --onefile --paths=src --add-data "src/bdix/bdixServers.txt;bdix" src/bdix/app.py
+          pyinstaller --onefile --paths=src --add-data "src/bdixServers.txt;bdix" src/app.py
           mkdir -p builds/windows
           mv dist/app.exe builds/windows/
 
@@ -55,7 +55,7 @@ jobs:
 
       - name: Build executable
         run: |
-          pyinstaller --onefile --paths=src --add-data "src/bdix/bdixServers.txt:bdix" src/bdix/app.py
+          pyinstaller --onefile --paths=src --add-data "src/bdixServers.txt;bdix" src/app.py
           mkdir -p builds/linux
           mv dist/app builds/linux/
 
